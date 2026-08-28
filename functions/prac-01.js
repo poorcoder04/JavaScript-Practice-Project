@@ -4,3 +4,4 @@ function add(x,y){
 
 let z= add(2,3);
 console.log(z);
+console.log(add.toString());
