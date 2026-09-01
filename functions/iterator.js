@@ -1,3 +1,4 @@
+
 let arr = [1,2,3,4,5];
 
 let it = arr[Symbol.iterator]();
@@ -31,24 +32,27 @@ let b = {
 }
 }
 
-for(let x of b){
-    console.log(x)
-}
+// for(let x of b){
+//     console.log(x)
+// }
 
-function add(){
-    return function mul(){
-        console.log(this);
+
+
+name = "Rakibul";
+
+let obj = {
+    name : "Hasan",
+    fun : ()=>{
+        console.log(this.name);
+        return function(){
+            console.log(this.name);
+        }
     }
 }
 
-add()()
+obj.fun()();
 
-console.log("---------------------------");
 
-function add1(){
-    return ()=>{
-        console.log(this);
-    }
-}
 
-add1()()
+
+
