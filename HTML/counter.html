@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <p id = 'content'></p>
+        <button type="button" onclick="increment()">Increment</button>
+        <button type="button" onclick="decrement()">Decrement</button>
+    </body>
+
+    <script>
+        const doc = document.getElementById('content');
+        let x=0;
+        function increment(){
+            x++;
+            doc.innerHTML=x;
+
+        }
+        
+        function decrement(){
+            x--;
+            doc.innerHTML=x;
+        }
+    </script>
+
+
+</html>
