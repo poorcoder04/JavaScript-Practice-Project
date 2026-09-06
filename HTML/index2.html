@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <p id ='id1'>Rakibul hasan</p>
+        <button type="button" onclick="fun()">click me</button>
+
+        <script>
+            let flag=true;
+            function fun(){
+                const doc = document.getElementById('id1');
+                if(flag){
+                    doc.style.visibility = 'hidden';
+                    flag=false;
+                }
+                else{
+                    doc.style.visibility = 'visible'
+                    flag=true;
+                }
+            }
+        </script>
+    </body>
+</html>

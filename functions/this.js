@@ -1,9 +1,10 @@
 
+name = "Rakibul";
 let obj = {
-    name : "Rakibul Hasan",
-    fun1 : function(){
+    name : "Hasan",
+    fun1 : ()=>{
         console.log(this.name);
-        return ()=>{
+        return function(){
             console.log(this.name);
             }
     }
