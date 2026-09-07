@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+
+
+        <h1>This a Demo Event</h1>
+        <div id="box" style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+            This is div;
+        </div>
+        <button id = "btn1">Click Me</button>
+
+        <input type="text" id="x" placeholder="PRESS A KEY">
+        <P id ="para"></P>
+
+
+
+        <script>
+
+            const btn = document.getElementById("btn1");
+            console.log(btn);
+            btn.addEventListener("click",function(){
+                btn.innerHTML = Date();
+            })
+
+           const box = document.getElementById("box");
+           box.addEventListener("mouseover",()=>{
+            box.innerHTML = "Mouse is over me";
+           })
+
+
+           const x=document.getElementById("x");
+           x.addEventListener("keydown",(event)=>{
+            document.getElementById("para").innerHTML = "A key is press that key is : " + event.key;
+           })
+        </script>
+    </body>
+</html>
