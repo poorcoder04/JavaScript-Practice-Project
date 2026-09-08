@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button id="time">It takes time</button>
+        <button id="btn">click me</button>
+        <p id = "para"></p>
+        <script>
+            const btn = document.getElementById("btn");
+            btn.addEventListener("click",()=>{
+                btn.innerHTML = "Button is clicked";
+            })
+            const time = document.getElementById("time");
+            time.addEventListener("click",()=>{
+                let i =5e9;
+                while(i--){
+
+                }
+                document.getElementById("para").innerHTML="Finished";
+            })
+        </script>
+    </body>
+</html>
