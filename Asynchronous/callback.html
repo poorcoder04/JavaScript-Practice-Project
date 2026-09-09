@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <button id="time">click the button to know the time</button>
+        <p id="para"></p>
+
+        <script>
+            const btn = document.getElementById("time");
+            btn.addEventListener("click",displayDate);
+
+            function displayDate(){
+                document.getElementById("para").innerHTML=Date();
+            }
+
+        </script>
+    </body>
+</html>
